@@ -8,30 +8,25 @@ const css = require('./webpack/css');
 const extractCSS = require('./webpack/extractCSS.js')
  
 const PATHS = {
-    source: path.join(__dirname, 'source'),
-    build: path.join(__dirname, 'build')
+    source: path.join(__dirname, 'src/pages'),
+    build: path.join(__dirname,'build')
 };
  
 const common = merge([
-    {
+    {  
+    mode: 'development',      
     entry: {
-        'index': PATHS.source + '/pages/index/index.js',
-        'blog': PATHS.source + '/pages/blog/blog.js'
+        'index': PATHS.source + '/Colors_&_Type/Colors_&_Type.js',
     },
     output: {
         path: PATHS.build,
-        filename: 'js/[name].js'
+        filename: '[name].js'
     },
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            chunks: ['index', 'common'],
-            template: PATHS.source + '/pages/index/index.pug',
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'blog.html',
-            chunks: ['blog', 'common'],
-            template: PATHS.source + '/pages/blog/blog.pug',
+            //chunks: ['index', 'common'],
+            template: PATHS.source + '/Colors_&_Type/Colors_&_Type.pug',
         }),
     ],
     },
@@ -43,7 +38,7 @@ module.exports = function(env) {
     if(env === 'production') {
         return merge([
             common,
-            extractCSS()
+            extractCSS(),
         ]);
     }
     if(env === 'development') {
