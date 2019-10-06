@@ -1,0 +1,28 @@
+.sample-color__block-color {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px; }
+
+.sample-color {
+  display: flex; }
+
+.Dark_Shade_100 {
+  background-color: #1F2041; }
+
+.Dark_Shade_75 {
+  background-color: #575870; }
+
+.Dark_Shade_50 {
+  background-color: #8F8FA0; }
+
+.Dark_Shade_25 {
+  background-color: #C7C7CF; }
+
+.Dark_Shade_5 {
+  background-color: #F4F4F5; }
+
+.Purple {
+  background-color: #BC9CFF; }
+
+.Green {
+  background-color: #6FCF97; }

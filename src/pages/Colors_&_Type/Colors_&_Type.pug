@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Webpack App</title>
-  </head>
-  <body>
-  include ../../components/blocks/sample-color/sample-color.pug
-  </body>
-</html>
+extends ../../components/pug/templates/template_Ui_kit_page.pug
+
+block title
+  | Colors & Type
+    
+block content
+  include ..\..\components\blocks\sample-color\sample-color.pug
