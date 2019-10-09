@@ -27,7 +27,6 @@ const common = merge([
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            //chunks: ['index', 'common'],
             template: PATHS.source + '/Colors_&_Type/Colors_&_Type.pug',
         }),
     ],

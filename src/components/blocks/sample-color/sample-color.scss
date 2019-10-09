@@ -1,36 +1,7 @@
-@import '../../scss/variables';
 @import '__block-color/__block-color';
 @import '__description/_description';
 @import '__value/_value';
 
 .sample-color {
     display: flex;
-}
-
-.Dark_Shade_100 {
-    background-color: $Dark_Shade_100;
-}
-
-.Dark_Shade_75 {
-    background-color: $Dark_Shade_75;
-}
-
-.Dark_Shade_50 {
-    background-color: $Dark_Shade_50;
-}
-
-.Dark_Shade_25 {
-    background-color: $Dark_Shade_25;
-}
-
-.Dark_Shade_5 {
-    background-color: $Dark_Shade_5;
-}
-
-.Purple {
-    background-color: $Purple;
-}
-
-.Green {
-    background-color: $Green;
 }

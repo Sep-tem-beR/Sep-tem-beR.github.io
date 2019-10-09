@@ -86,17 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/components/blocks/sample-color/sample-color.scss":
-/*!**************************************************************!*\
-  !*** ./src/components/blocks/sample-color/sample-color.scss ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/components/blocks/sample-color/sample-color.scss?");
-
-/***/ }),
-
 /***/ "./src/pages/Colors_&_Type/Colors_&_Type.js":
 /*!**************************************************!*\
   !*** ./src/pages/Colors_&_Type/Colors_&_Type.js ***!
@@ -105,7 +94,18 @@ eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./sr
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_blocks_sample_color_sample_color_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/blocks/sample-color/sample-color.scss */ \"./src/components/blocks/sample-color/sample-color.scss\");\n/* harmony import */ var _components_blocks_sample_color_sample_color_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_blocks_sample_color_sample_color_scss__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\nconsole.log('123qwe')\n\n//# sourceURL=webpack:///./src/pages/Colors_&_Type/Colors_&_Type.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Colors_Type_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Colors_&_Type.scss */ \"./src/pages/Colors_&_Type/Colors_&_Type.scss\");\n/* harmony import */ var _Colors_Type_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Colors_Type_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/pages/Colors_&_Type/Colors_&_Type.js?");
+
+/***/ }),
+
+/***/ "./src/pages/Colors_&_Type/Colors_&_Type.scss":
+/*!****************************************************!*\
+  !*** ./src/pages/Colors_&_Type/Colors_&_Type.scss ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/pages/Colors_&_Type/Colors_&_Type.scss?");
 
 /***/ })
 
