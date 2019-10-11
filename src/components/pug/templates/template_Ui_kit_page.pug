@@ -6,6 +6,13 @@ html
         title
             block title
         
-    body
-        include ../../blocks/header_logo/header_logo.pug
-        block content
+    block append page
+
+        block append body
+            include ../../blocks/body/body.pug
+            +body('color-and-type')
+
+            block append header
+                include ../../blocks/Colors_&_Type/header_logo/header_logo.pug
+        
+            block content

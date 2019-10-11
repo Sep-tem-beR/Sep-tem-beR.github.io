@@ -3,5 +3,31 @@ extends ../../components/pug/templates/template_Ui_kit_page.pug
 block title
   | Colors & Type
     
-block content
-  include ..\..\components\blocks\sample-color\sample-color.pug
+
+
+block page
+
+  block append body
+
+      block append header
+
+      block content
+        .wrapper
+          .group-color
+            include ../../components/blocks/Colors_&_Type/sample-color/sample-color.pug
+
+            +card_color('Dark-Shade-100','Dark Shade 100%', '#1F2041')
+            +card_color('Dark-Shade-75','Dark Shade 75%', '#1F2041')
+            +card_color('Dark-Shade-50','Dark Shade 50%', '#1F2041')
+            +card_color('Dark-Shade-25','Dark Shade 25%', '#1F2041')
+            +card_color('Dark-Shade-5','Dark Shade 5%', '#1F2041')
+            +card_color('Purple','Purple', '#1F2041')
+            +card_color('Green','Green', '#1F2041')
+
+          .group-text
+            include ../../components/blocks/Colors_&_Type/font_type/font-type.pug
+
+            +font-type('H1', 'H1', 'This one is the sub-section or widget title')
+            +font-type('H2', 'H2', 'Next one is the item title inside widgets')
+            +font-type('H3', 'H3', 'This is a label or CTA text')
+            +font-type('Body','Body', 'This is the body text which is used for most of the design, like paragraphs, lists, etc.')     
