@@ -4,30 +4,30 @@ block title
   | Colors & Type
     
 
+block body
+  body.color-and-type
 
-block page
+    block prepend header
+      include ../../components/blocks/Colors_&_Type/header_logo/header_logo.pug
+      +header('color-and-type__header')
 
-  block append body
+    block content
+      main.color-and-type__main.main
+        section.main__section.color
+          include ../../components/blocks/Colors_&_Type/card_color/card_color.pug
 
-      block append header
+          +card_color('color__card-color','card-color','Dark-Shade-100','Dark Shade 100%', '#1F2041')
+          +card_color('color__card-color','card-color','Dark-Shade-75','Dark Shade 75%', '#1F2041')
+          +card_color('color__card-color','card-color','Dark-Shade-50','Dark Shade 50%', '#1F2041')
+          +card_color('color__card-color','card-color','Dark-Shade-25','Dark Shade 25%', '#1F2041')
+          +card_color('color__card-color','card-color','Dark-Shade-5','Dark Shade 5%', '#1F2041')
+          +card_color('color__card-color','card-color','Purple','Purple', '#1F2041')
+          +card_color('color__card-color','card-color','Green','Green', '#1F2041')
 
-      block content
-        .wrapper
-          .group-color
-            include ../../components/blocks/Colors_&_Type/sample-color/sample-color.pug
+        section.main__section.text
+          include ../../components/blocks/Colors_&_Type/font_type/font_type.pug
 
-            +card_color('Dark-Shade-100','Dark Shade 100%', '#1F2041')
-            +card_color('Dark-Shade-75','Dark Shade 75%', '#1F2041')
-            +card_color('Dark-Shade-50','Dark Shade 50%', '#1F2041')
-            +card_color('Dark-Shade-25','Dark Shade 25%', '#1F2041')
-            +card_color('Dark-Shade-5','Dark Shade 5%', '#1F2041')
-            +card_color('Purple','Purple', '#1F2041')
-            +card_color('Green','Green', '#1F2041')
-
-          .group-text
-            include ../../components/blocks/Colors_&_Type/font_type/font-type.pug
-
-            +font-type('H1', 'H1', 'This one is the sub-section or widget title')
-            +font-type('H2', 'H2', 'Next one is the item title inside widgets')
-            +font-type('H3', 'H3', 'This is a label or CTA text')
-            +font-type('Body','Body', 'This is the body text which is used for most of the design, like paragraphs, lists, etc.')     
+          +font_type('H1', 'H1', 'This one is the sub-section or widget title')
+          +font_type('H2', 'H2', 'Next one is the item title inside widgets')
+          +font_type('H3', 'H3', 'This is a label or CTA text')
+          +font_type('Body','Body', 'This is the body text which is used for most of the design, like paragraphs, lists, etc.')     
