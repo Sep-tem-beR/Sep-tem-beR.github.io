@@ -1,9 +1,9 @@
-mixin card_color(element_name, block_name, name, description, value)
-    div(class = element_name, class = block_name)
-        div(class = block_name + '__block-color', class = name)
-        div(class = block_name + '__content')
-            p(class = block_name + '__description')= description
-            p(class = block_name + '__value')= value
+mixin card_color(parent_block, name, description, value)
+    div(class = parent_block + '__card-color', class = 'card-color')
+        div(class = parent_block + '__block-color',class = 'card-color__block-color', class = name)
+        div(class = parent_block + '__content',class = 'card-color__content')
+            p(class = 'card-color__description')= description
+            p(class = 'card-color__value')= value
     
     
     

@@ -10,13 +10,20 @@ const images = require('./webpack/images');
 const fonts = require('./webpack/fonts');
  
 const PATHS = {
-    source: path.join(__dirname, 'src/pages'),
-    build: path.join(__dirname,'build')
+    source: path.resolve(__dirname + '/src/pages'),
+    build: path.resolve (__dirname + '/build')
 };
  
 const common = merge([
     {  
-    mode: 'development',      
+    mode: 'development',
+
+    resolve: {
+        alias: {
+          src: path.resolve(__dirname, 'src')
+        }
+      },
+
     entry: {
         'index': PATHS.source + '/Colors_&_Type/Colors_&_Type.js',
     },

@@ -1,6 +1,29 @@
-.card_color {
+.card-color {
     display: flex;
+
+    &__block-color {
+        width: 70px;
+        height: 70px;
+        border-radius: 6px;
+    }
+
+    &__description {
+        font-family: Quicksand;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 29px;
+        margin-top: 6px;
+    }
+
+    &__value {
+        font-family: Quicksand;
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 29px;
+    }
 }
+
+
 
 
 

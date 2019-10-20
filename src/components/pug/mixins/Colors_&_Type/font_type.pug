@@ -1,4 +1,6 @@
-mixin font_type(type, name, value)
-    div(class = 'font-type-' + type)
-        div(class = 'font-type-' + type + '_name') = name
-        div(class = 'font-type-' + type + '_value') = value
+mixin font_type(parent_block, example, description)
+    div(class = parent_block + '__card-text', class = example)
+        div(class = example + '__example')
+            p= example
+        div(class = example + '__description')
+            p= description

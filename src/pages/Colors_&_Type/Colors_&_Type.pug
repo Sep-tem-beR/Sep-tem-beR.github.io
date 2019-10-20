@@ -13,21 +13,22 @@ block body
 
     block content
       main.color-and-type__main.main
-        section.main__section.color
+        section.main__section-color.color
           include ../../components/blocks/Colors_&_Type/card_color/card_color.pug
 
-          +card_color('color__card-color','card-color','Dark-Shade-100','Dark Shade 100%', '#1F2041')
-          +card_color('color__card-color','card-color','Dark-Shade-75','Dark Shade 75%', '#1F2041')
-          +card_color('color__card-color','card-color','Dark-Shade-50','Dark Shade 50%', '#1F2041')
-          +card_color('color__card-color','card-color','Dark-Shade-25','Dark Shade 25%', '#1F2041')
-          +card_color('color__card-color','card-color','Dark-Shade-5','Dark Shade 5%', '#1F2041')
-          +card_color('color__card-color','card-color','Purple','Purple', '#1F2041')
-          +card_color('color__card-color','card-color','Green','Green', '#1F2041')
+          +card_color('color','Dark-Shade-100','Dark Shade 100%', '#1F2041')
+          +card_color('color','Dark-Shade-75','Dark Shade 75%', '#1F2041')
+          +card_color('color','Dark-Shade-50','Dark Shade 50%', '#1F2041')
+          +card_color('color','Dark-Shade-25','Dark Shade 25%', '#1F2041')
+          +card_color('color','Dark-Shade-5','Dark Shade 5%', '#1F2041')
+          +card_color('color','Purple','Purple', '#BC9CFF')
+          +card_color('color','Green','Green', '#6FCF97')
 
-        section.main__section.text
+        section.main__section-text.text
           include ../../components/blocks/Colors_&_Type/font_type/font_type.pug
 
-          +font_type('H1', 'H1', 'This one is the sub-section or widget title')
-          +font_type('H2', 'H2', 'Next one is the item title inside widgets')
-          +font_type('H3', 'H3', 'This is a label or CTA text')
-          +font_type('Body','Body', 'This is the body text which is used for most of the design, like paragraphs, lists, etc.')     
+          +font_type('text', 'H1', 'This one is the sub-section or widget title')
+          +font_type('text', 'H2', 'Next one is the item title inside widgets')
+          +font_type('text', 'H3', 'This is a label or CTA text')
+          +font_type('text','Body', 'This is the body text which is used for most of the design, like paragraphs, lists, etc.') 
+              
