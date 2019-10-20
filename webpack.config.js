@@ -16,7 +16,7 @@ const PATHS = {
  
 const common = merge([
     {  
-    mode: 'development',
+    mode: 'production',
 
     resolve: {
         alias: {
