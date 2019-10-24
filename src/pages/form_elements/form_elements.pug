@@ -1,0 +1,20 @@
+extends ../../components/pug/templates/template_Ui_kit_page.pug
+
+block title
+  | Form Elements
+    
+
+block body
+  body.form-elements
+
+    block prepend header
+      include ../../components/blocks/Colors_&_Type/header_logo/header_logo.pug
+      +header('form-elements__header')
+
+    block content
+        section.input
+            
+        section.dropdown
+        section.lists
+        section.qualities
+        section.comments

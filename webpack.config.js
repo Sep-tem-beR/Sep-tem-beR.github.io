@@ -16,8 +16,6 @@ const PATHS = {
  
 const common = merge([
     {  
-    mode: 'production',
-
     resolve: {
         alias: {
           src: path.resolve(__dirname, 'src')

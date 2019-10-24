@@ -5,7 +5,7 @@ module.exports = function() {
             port: 9000
         }
     }
-}
+};
 
 
 
