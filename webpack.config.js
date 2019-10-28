@@ -13,6 +13,11 @@ const PATHS = {
     source: path.resolve(__dirname + '/src/pages'),
     build: path.resolve (__dirname + '/build')
 };
+
+const pages = [
+    'Colors_&_Type',
+    // 'form_elements'
+];
  
 const common = merge([
     {  
@@ -22,18 +27,30 @@ const common = merge([
         }
       },
 
-    entry: {
-        'index': PATHS.source + '/Colors_&_Type/Colors_&_Type.js',
-    },
+    entry: (function() {
+        const entrys = {};
+        pages.forEach(function(item) {
+            entrys[item] = PATHS.source + '/' + item + '/' + item +'.js';
+            });
+        return entrys;
+    }()),
+
     output: {
         path: PATHS.build,
-        filename: '[name].js'
+        publicPath: '../',
+        filename: 'js/[name].js'
     },
     plugins: [
         new HtmlWebpackPlugin({
-            filename: 'index.html',
-            template: PATHS.source + '/Colors_&_Type/Colors_&_Type.pug',
+            filename: pages[0] + '/index.html',
+            template: PATHS.source + '/' + pages[0] + '/' + pages[0] + '.pug',
+            chunks: ['Colors_&_Type'],
         }),
+
+        // new HtmlWebpackPlugin({
+        //     filename: pages[1] + '/index.html',
+        //     template: PATHS.source + '/' + pages[1] + '/' + pages[1] + '.pug',
+        // }),
     ],
     },
     pug(),
