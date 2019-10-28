@@ -1,0 +1,5 @@
+mixin text_field_mixin(options, with_title)
+    if with_title
+        label
+            +head_line_mixin(options.head, options.title, options.block_head_line_classes)
+            +input_mixin(options.type, options.block_input_classes, options.placeholder)
