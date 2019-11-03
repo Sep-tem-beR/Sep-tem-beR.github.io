@@ -16,14 +16,15 @@ const PATHS = {
 
 const pages = [
     'Colors_&_Type',
-    // 'form_elements'
+    'form_elements'
 ];
  
 const common = merge([
     {  
     resolve: {
         alias: {
-          src: path.resolve(__dirname, 'src')
+          src: path.resolve(__dirname, 'src'),
+          node_modules: path.resolve(__dirname, 'node_modules')
         }
       },
 
@@ -37,7 +38,6 @@ const common = merge([
 
     output: {
         path: PATHS.build,
-        publicPath: '../',
         filename: 'js/[name].js'
     },
     plugins: [
@@ -47,10 +47,11 @@ const common = merge([
             chunks: ['Colors_&_Type'],
         }),
 
-        // new HtmlWebpackPlugin({
-        //     filename: pages[1] + '/index.html',
-        //     template: PATHS.source + '/' + pages[1] + '/' + pages[1] + '.pug',
-        // }),
+        new HtmlWebpackPlugin({
+            filename: pages[1] + '/index.html',
+            template: PATHS.source + '/' + pages[1] + '/' + pages[1] + '.pug',
+            chunks: ['form_elements'],
+        }),
     ],
     },
     pug(),

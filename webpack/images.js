@@ -6,7 +6,8 @@ module.exports = function() {
             test: /\.(jpg|png|svg)$/,
             loader: 'file-loader',
             options: {
-                name: '/images/[name].[ext]',
+                publicPath: '../',
+                name: 'images/[name].[ext]',
                      },
                   },
               ],

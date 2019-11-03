@@ -1,1 +1,13 @@
-include ../../../pug/mixins/form_elements/title_&_discription.pug
+include ../head_line/head_line.pug
+include ../input/input.pug
+
+mixin text_field(options, with_title)
+    .text_field(class = options.text_field_classes)
+        if with_title
+            label
+                - attributes = options
+                +head_line_mixin(attributes)
+                +input_mixin(attributes)
+        else
+            +input_mixin(attributes)
+

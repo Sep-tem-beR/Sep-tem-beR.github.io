@@ -4,21 +4,49 @@ block title
   | Form Elements
     
 
-//- block body
-//-   body.form-elements
+block body
+  body.form-elements
 
-//-     block prepend header
-//-       include ../../components/blocks/Colors_&_Type/header_logo/header_logo.pug
-//-       +header('form-elements__header')
+    block prepend header
+      include ../../components/blocks/Colors_&_Type/header_logo/header_logo.pug
+      +header('form-elements__header')
 
-//-     block content
-//-         section.form-elements__input.input
-//-             div.input__column-1
-//-               include ../../components/blocks/form_elements/text_field/text_field.pug
-//-               +
-//-             div.input__column-2
-//-             div.input__column-3
-//-         section.form-elements__dropdown.dropdown
-//-         section.form-elements__lists.lists
-//-         section.form-elements__qualities.qualities
-//-         section.form-elements__comments.comments
+    block content
+        section.form-elements__inputs.inputs
+            div.inputs__column-1.column-1
+              include ../../components/blocks/form_elements/text_field/text_field.pug
+              +text_field({
+                  text_field_classes: ['column-1__text-field', 'text-field'],
+                  tag: 'h3',
+                  tag_value: 'text field',
+                  block_head_line_classes: ['text-field__head-line'],
+                  tupe: 'text',
+                  placeholder: 'Email',
+                  block_input_classes: ['text-field__input'],
+              }, true)
+
+              +text_field({
+                  text_field_classes: ['column-1__text-field', 'text-field'],
+                  tag: 'h3',
+                  tag_value: 'text field',
+                  block_head_line_classes: ['text-field__head-line'],
+                  tupe: 'text',
+                  placeholder: 'This is pretty awesome',
+                  block_input_classes: ['text-field__input'],
+              }, true)
+
+              +text_field({
+                  text_field_classes: ['column-1__text-field', 'text-field'],
+                  tag: 'h3',
+                  tag_value: 'masked text field',
+                  block_head_line_classes: ['text-field__head-line'],
+                  tupe: 'text',
+                  placeholder: 'ДД.ММ.ГГГГ',
+                  block_input_classes: ['text-field__input'],
+              }, true)
+            div.inputs__column-2
+            div.inputs__column-3
+        section.form-elements__dropdown.dropdown
+        section.form-elements__lists.lists
+        section.form-elements__qualities.qualities
+        section.form-elements__comments.comments
