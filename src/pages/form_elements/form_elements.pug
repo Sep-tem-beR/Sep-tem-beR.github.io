@@ -1,4 +1,6 @@
 extends ../../components/pug/templates/template_Ui_kit_page.pug
+include ../../components/blocks/form_elements/text_field/text_field.pug
+include ../../components/blocks/form_elements/dropdown_input/dropdown_input.pug
 
 block title
   | Form Elements
@@ -8,44 +10,55 @@ block body
   body.form-elements
 
     block prepend header
-      include ../../components/blocks/Colors_&_Type/header_logo/header_logo.pug
+      include ../../components/blocks/header_logo/header_logo.pug
       +header('form-elements__header')
 
     block content
+      .form-elements__wrapper
         section.form-elements__inputs.inputs
-            div.inputs__column-1.column-1
-              include ../../components/blocks/form_elements/text_field/text_field.pug
+            div.inputs__column.column-1
               +text_field({
-                  text_field_classes: ['column-1__text-field', 'text-field'],
-                  tag: 'h3',
+                  text_field_classes: ['column-1__text-field', 'text-field', 'text-field-default'],
+                  tag: 'p',
                   tag_value: 'text field',
-                  block_head_line_classes: ['text-field__head-line'],
+                  block_head_line_classes: ['text-field__head-line', 'text-field-default__head-line'],
                   tupe: 'text',
                   placeholder: 'Email',
-                  block_input_classes: ['text-field__input'],
+                  block_input_classes: ['text-field__input', 'text-field-default__input'],
               }, true)
 
               +text_field({
-                  text_field_classes: ['column-1__text-field', 'text-field'],
-                  tag: 'h3',
+                  text_field_classes: ['column-1__text-field', 'text-field', 'hover-focus'],
+                  tag: 'p',
                   tag_value: 'text field',
-                  block_head_line_classes: ['text-field__head-line'],
+                  block_head_line_classes: ['text-field__head-line', 'hover-focus__head-line'],
                   tupe: 'text',
                   placeholder: 'This is pretty awesome',
-                  block_input_classes: ['text-field__input'],
+                  block_input_classes: ['text-field__input', 'hover-focus__input'],
+              }, true)
+
+              +dropdown_input({
+                  text_field_classes: ['column-1__dropdown', 'dropdown', 'dropdown-default'],
+                  tag: 'p',
+                  tag_value: 'dropdown',
+                  block_head_line_classes: ['dropdown__head-line', 'dropdown-default__head-line'],
+                  tupe: 'text',
+                  placeholder: 'Сколько гостей',
+                  block_wrapper_class: 'dropdown__input-wrapper',
+                  block_input_classes: ['dropdown__input', 'dropdown-default__input'],
               }, true)
 
               +text_field({
                   text_field_classes: ['column-1__text-field', 'text-field'],
-                  tag: 'h3',
+                  tag: 'p',
                   tag_value: 'masked text field',
                   block_head_line_classes: ['text-field__head-line'],
                   tupe: 'text',
                   placeholder: 'ДД.ММ.ГГГГ',
                   block_input_classes: ['text-field__input'],
               }, true)
-            div.inputs__column-2
-            div.inputs__column-3
+            div.inputs__column.column-2
+            div.inputs__column.column-3
         section.form-elements__dropdown.dropdown
         section.form-elements__lists.lists
         section.form-elements__qualities.qualities

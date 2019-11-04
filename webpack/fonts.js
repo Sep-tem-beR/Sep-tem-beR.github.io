@@ -7,6 +7,7 @@ module.exports = function() {
                     loader: 'file-loader',
                     include: [/fonts/],
                     options: {
+                      publicPath: '../',
                       name: 'fonts/[name].[ext]',
                     }
                   }, 

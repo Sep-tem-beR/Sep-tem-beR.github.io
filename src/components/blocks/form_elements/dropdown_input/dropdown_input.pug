@@ -1,13 +1,13 @@
 include ../head_line/head_line.pug
 include ../input/input.pug
 
-mixin text_field(options, with_title)
+mixin dropdown_input(options, with_title)
     div(class = options.text_field_classes)
         if with_title
             label
                 - attributes = options
                 +head_line(attributes)
-                +input(attributes)
+                div(class = options.block_wrapper_class)
+                    +input(attributes)
         else
             +input_mixin(attributes)
-
