@@ -1,0 +1,9 @@
+.dropdown-wrapper {
+    width: 266px;
+
+    &::after {
+        bottom: 34px;
+        left: 285px;
+
+    }
+}
