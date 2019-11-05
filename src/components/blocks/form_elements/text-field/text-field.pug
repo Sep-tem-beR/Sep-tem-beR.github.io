@@ -1,0 +1,13 @@
+include ../head-line/head-line.pug
+include ../input-text/input-text.pug
+
+mixin text-field(options, with_title)
+    div(class = options.text_field_classes)
+        if with_title
+            label
+                - attributes = options
+                +head-line(attributes)
+                +input-text(attributes)
+        else
+            +input-text(attributes)
+

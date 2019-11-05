@@ -1,6 +1,6 @@
 extends ../../components/pug/templates/template_Ui_kit_page.pug
-include ../../components/blocks/form_elements/text_field/text_field.pug
-include ../../components/blocks/form_elements/dropdown_input/dropdown_input.pug
+include ../../components/blocks/form_elements/text-field/text-field.pug
+include ../../components/blocks/form_elements/dropdown/dropdown.pug
 
 block title
   | Form Elements
@@ -17,46 +17,44 @@ block body
       .form-elements__wrapper
         section.form-elements__inputs.inputs
             div.inputs__column.column-1
-              +text_field({
-                  text_field_classes: ['column-1__text-field', 'text-field', 'text-field-default'],
-                  tag: 'p',
-                  tag_value: 'text field',
-                  block_head_line_classes: ['text-field__head-line', 'text-field-default__head-line'],
+              +text-field({
+                  text_field_classes: ['column-1__text-field', 'text-field'],
+                  value: 'text field',
+                  block_head_line_classes: ['text-field__head-line'],
                   tupe: 'text',
                   placeholder: 'Email',
-                  block_input_classes: ['text-field__input', 'text-field-default__input'],
+                  block_input_text_classes: ['text-field__input-text'],
               }, true)
 
-              +text_field({
-                  text_field_classes: ['column-1__text-field', 'text-field', 'hover-focus'],
-                  tag: 'p',
-                  tag_value: 'text field',
-                  block_head_line_classes: ['text-field__head-line', 'hover-focus__head-line'],
+              +text-field({
+                  text_field_classes: ['column-1__text-field', 'text-field'],
+                  value: 'text field',
+                  block_head_line_classes: ['text-field__head-line'],
                   tupe: 'text',
                   placeholder: 'This is pretty awesome',
-                  block_input_classes: ['text-field__input', 'hover-focus__input'],
+                  block_input_text_classes: ['text-field__input-text'],
               }, true)
 
-              +dropdown_input({
+              +dropdown({
                   text_field_classes: ['column-1__dropdown', 'dropdown', 'dropdown-default'],
-                  tag: 'p',
-                  tag_value: 'dropdown',
+                  value: 'dropdown',
                   block_head_line_classes: ['dropdown__head-line', 'dropdown-default__head-line'],
                   tupe: 'text',
                   placeholder: 'Сколько гостей',
                   block_wrapper_class: 'dropdown__input-wrapper',
-                  block_input_classes: ['dropdown__input', 'dropdown-default__input'],
+                  block_input_text_classes: ['dropdown__input', 'dropdown-default__input'],
               }, true)
 
-              +text_field({
+              +text-field({
                   text_field_classes: ['column-1__text-field', 'text-field'],
-                  tag: 'p',
-                  tag_value: 'masked text field',
+                  value: 'masked text field',
                   block_head_line_classes: ['text-field__head-line'],
                   tupe: 'text',
                   placeholder: 'ДД.ММ.ГГГГ',
-                  block_input_classes: ['text-field__input'],
+                  block_input_text_classes: ['text-field__input-text'],
               }, true)
+
+              
             div.inputs__column.column-2
             div.inputs__column.column-3
         section.form-elements__dropdown.dropdown

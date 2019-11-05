@@ -1,0 +1,18 @@
+.dropdown-wrapper {
+    width: 320px;
+    height: 44px;
+
+    &::after {
+        content: '\e313';
+        position: relative;
+        bottom: 34px;
+        left: 285px;
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+        color: $Dark-Shade-50;
+
+    }
+}
