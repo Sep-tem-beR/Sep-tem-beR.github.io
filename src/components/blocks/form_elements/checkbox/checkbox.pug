@@ -1,0 +1,12 @@
+//- using
+
+//- +checkbox({
+//-     block_classes: 'checkbox', '',
+//-     option_name: '',
+//- })
+
+mixin checkbox(options)
+    p(class = options.block_classes)
+        label
+            input.checkbox.checkbox__input(type="checkbox")
+            span.option.checkbox__option= options.option_name

@@ -1,2 +1,11 @@
+//- using
+
+//- +head-line({
+//-     head_line_classes: '',
+//-     head_line_content: '',
+//- })
+
+
+
 mixin head-line(options)
-    p.head-line(class = options.block_head_line_classes)= options.value
+    p(class = options.head_line_classes)= options.head_line_content

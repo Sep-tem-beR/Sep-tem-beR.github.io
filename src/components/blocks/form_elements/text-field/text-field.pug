@@ -1,13 +1,37 @@
 include ../head-line/head-line.pug
-include ../input-text/input-text.pug
+include ../input-type-text/input-type-text.pug
 
-mixin text-field(options, with_title)
-    div(class = options.text_field_classes)
-        if with_title
+
+//- using
+//- +text-field({
+//-     block_type: '',     'text-field' || 'dropdown' || 'subscription'
+//-     block_mix: '',
+//-     the_title_is: ,
+//-     head_line_classes: ['head_line', 'text-field__head_line'],
+//-     head_line_content: '',
+//-     input_wrapper_mod: [''],
+//-     input_classes: ['input','text-field__input'],
+//-     input_placeholder: '',
+//- })
+
+
+                
+
+mixin text-field(options)
+    - attributes = options
+
+    .text-field(class = options.block_mix + '__text-field' class = options.block_mod)
+        if options.the_title_is
             label
-                - attributes = options
                 +head-line(attributes)
-                +input-text(attributes)
+                if options.block_type === 'dropdown' || 'subscription'
+                    .input-wrapper.text-field__input-wrapper(class = 'text-field__input-wrapper_' + options.block_type class = options.input_wrapper_mod)
+                        +input-type-text(attributes)
+                else
+                    +input-type-text(attributes)
         else
-            +input-text(attributes)
-
+            if options.type === 'dropdown' || 'subscription'
+                    .input-wrapper.text-field__input-wrapper(class = 'text-field__input-wrapper_' + options.block_type class = options.input_wrapper_mod)
+                        +input-type-text(attributes)
+            else
+                +input-type-text(attributes)

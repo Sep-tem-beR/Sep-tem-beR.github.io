@@ -1,0 +1,15 @@
+.text-field {
+
+    &__input-wrapper {
+
+        &_size_m {
+            width: 266px;
+            height: 44px;
+
+            &::after {
+                bottom: 33px;
+                left: 232px;
+            }
+        }
+    }
+}

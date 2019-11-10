@@ -1,63 +1,126 @@
 extends ../../components/pug/templates/template_Ui_kit_page.pug
-include ../../components/blocks/form_elements/text-field/text-field.pug
-include ../../components/blocks/form_elements/dropdown/dropdown.pug
+include ../../components/blocks/form_elements/form_elements.pug
 
 block title
-  | Form Elements
-    
+	| Form Elements
+	
 
 block body
-  body.form-elements
+	body.form-elements
 
-    block prepend header
-      include ../../components/blocks/header_logo/header_logo.pug
-      +header('form-elements__header')
+	block prepend header
+		include ../../components/blocks/header_logo/header_logo.pug
+		+header('form-elements__header')
 
-    block content
-      .form-elements__wrapper
-        section.form-elements__inputs.inputs
-            div.inputs__column.column-1
-              +text-field({
-                  text_field_classes: ['column-1__text-field', 'text-field'],
-                  value: 'text field',
-                  block_head_line_classes: ['text-field__head-line'],
-                  tupe: 'text',
-                  placeholder: 'Email',
-                  block_input_text_classes: ['text-field__input-text'],
-              }, true)
+	block content
+		.form-elements__wrapper
+			section.form-elements__inputs.inputs
+				div.inputs__column.column-1
+					+text-field({
+						block_type: 'text-field',  
+						block_mix: 'column-1',
+						the_title_is: true,
+						head_line_classes: ['head-line', 'text-field__head_line'],
+						head_line_content: 'text field',
+						input_wrapper_mod: [''],
+						input_classes: ['input','text-field__input'],
+						input_placeholder: 'Email',
+					})
 
-              +text-field({
-                  text_field_classes: ['column-1__text-field', 'text-field'],
-                  value: 'text field',
-                  block_head_line_classes: ['text-field__head-line'],
-                  tupe: 'text',
-                  placeholder: 'This is pretty awesome',
-                  block_input_text_classes: ['text-field__input-text'],
-              }, true)
+					+text-field({
+						block_type: 'text-field',  
+						block_mix: 'column-1',
+						the_title_is: true,
+						head_line_classes: ['head-line', 'text-field__head_line'],
+						head_line_content: 'text field',
+						input_wrapper_mod: [''],
+						input_classes: ['input','text-field__input'],
+						input_placeholder: 'This is pretty awesome',
+					})
 
-              +dropdown({
-                  text_field_classes: ['column-1__dropdown', 'dropdown', 'dropdown-default'],
-                  value: 'dropdown',
-                  block_head_line_classes: ['dropdown__head-line', 'dropdown-default__head-line'],
-                  tupe: 'text',
-                  placeholder: 'Сколько гостей',
-                  block_wrapper_class: 'dropdown__input-wrapper',
-                  block_input_text_classes: ['dropdown__input', 'dropdown-default__input'],
-              }, true)
+					+text-field({
+						block_type: 'dropdown',  
+						block_mix: 'column-1',
+						the_title_is: true,
+						head_line_classes: ['head-line', 'text-field__head_line'],
+						head_line_content: 'dropdown',
+						input_wrapper_mod: [''],
+						input_classes: ['input','text-field__input'],
+						input_placeholder: 'Сколько гостей',
+					})
 
-              +text-field({
-                  text_field_classes: ['column-1__text-field', 'text-field'],
-                  value: 'masked text field',
-                  block_head_line_classes: ['text-field__head-line'],
-                  tupe: 'text',
-                  placeholder: 'ДД.ММ.ГГГГ',
-                  block_input_text_classes: ['text-field__input-text'],
-              }, true)
+					+text-field({
+						block_type: 'text-field',  
+						block_mix: 'column-1',
+						the_title_is: true,
+						head_line_classes: ['head-line', 'text-field__head_line'],
+						head_line_content: 'masked text field',
+						input_wrapper_mod: [''],
+						input_classes: ['input','text-field__input'],
+						input_placeholder: 'ДД.ММ.ГГГГ',
+					})
 
-              
-            div.inputs__column.column-2
-            div.inputs__column.column-3
-        section.form-elements__dropdown.dropdown
-        section.form-elements__lists.lists
-        section.form-elements__qualities.qualities
-        section.form-elements__comments.comments
+					.column-1__wrapper
+						+text-field({
+						block_type: 'dropdown',  
+						block_mix: 'column-1',
+						the_title_is: true,
+						head_line_classes: ['head-line', 'text-field__head_line'],
+						head_line_content: 'date dropdown',
+						input_wrapper_mod: ['text-field__input-wrapper_size_s'],
+						input_classes: ['input','text-field__input'],
+						input_placeholder: 'ДД.ММ.ГГГГ',
+						})
+
+						+text-field({
+							block_type: 'dropdown',  
+							block_mix: 'column-1',
+							the_title_is: true,
+							head_line_classes: ['head-line', 'text-field__head_line'],
+							head_line_content: 'date dropdown',
+							input_wrapper_mod: ['text-field__input-wrapper_size_s'],
+							input_classes: ['input','text-field__input'],
+							input_placeholder: '19.08.2019',
+						})
+					
+					+text-field({
+						block_type: 'dropdown',  
+						block_mix: 'column-1',
+						the_title_is: true,
+						head_line_classes: ['head-line', 'text-field__head_line'],
+						head_line_content: 'filter date dropdown',
+						input_wrapper_mod: ['text-field__input-wrapper_size_m'],
+						input_classes: ['input','text-field__input'],
+						input_placeholder: '19 авг - 23 авг',
+					})
+
+					+text-field({
+						block_type: 'subscription',  
+						block_mix: 'column-1',
+						the_title_is: true,
+						head_line_classes: ['head-line', 'text-field__head_line'],
+						head_line_content: 'subscription text field',
+						input_wrapper_mod: ['text-field__input-wrapper_size_m'],
+						input_classes: ['input','text-field__input'],
+						input_placeholder: 'Email',
+					})
+
+
+				div.inputs__column.column-2
+					.checkbox-buttons.column-2__checkbox-buttons
+						+head-line({
+							head_line_classes: ['head-line', 'checkbox-buttons__head-line'],
+							head_line_content: 'checkbox buttons',
+						})
+
+						+checkbox({
+						    block_classes: ['checkbox', 'checkbox-buttons__checkbox'],
+							option_name: 'Можно курить',
+						})
+
+
+				div.inputs__column.column-3
+			section.form-elements__dropdown.dropdown
+			section.form-elements__lists.lists
+			section.form-elements__qualities.qualities
+			section.form-elements__comments.comments

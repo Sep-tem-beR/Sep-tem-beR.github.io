@@ -1,0 +1,23 @@
+.text-field {
+
+    &__input-wrapper {
+
+        &_subscription {
+
+            &::after {
+                content: '\e5c8';
+                position: relative;
+                bottom: 34px;
+                left: 232px;
+                font-family: Material Icons;
+                color: #BC9CFF;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 24px;
+        
+            }
+
+        } 
+    }
+}
