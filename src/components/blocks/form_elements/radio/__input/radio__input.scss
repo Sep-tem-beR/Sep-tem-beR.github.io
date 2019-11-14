@@ -1,0 +1,14 @@
+.radio {
+
+    &__input {
+        display: none;
+
+        &:checked + .radio__custom-radio {
+            border-color: $Primary_Color;
+
+            &::after {
+                display: block;
+            }
+        }
+    }
+}

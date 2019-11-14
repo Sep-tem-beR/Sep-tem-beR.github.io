@@ -43,3 +43,23 @@
         margin-bottom: 21px;
     }
 }
+
+.column-2 {
+    width: 266px;
+
+    &__checkbox-buttons {
+        width: 230px;
+        margin-bottom: 41px;
+    }
+
+    &__radio-buttons {
+        width: 100%;
+    }
+}
+
+.radio-buttons {
+
+    &__radio {
+        margin-top: 11px;
+    }
+}

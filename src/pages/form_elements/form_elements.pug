@@ -118,6 +118,36 @@ block body
 							option_name: 'Можно курить',
 						})
 
+						+checkbox({
+						    block_classes: ['checkbox', 'checkbox-buttons__checkbox'],
+							option_name: 'Можно с питомцами',
+						})
+
+						+checkbox({
+						    block_classes: ['checkbox', 'checkbox-buttons__checkbox'],
+							option_name: 'Можно пригласить гостей (до 10 человек)',
+						})
+
+					.radio-buttons.column-2__radio-buttons
+						+head-line({
+							head_line_classes: ['head-line', 'checkbox-buttons__head-line'],
+							head_line_content: 'radio buttons',
+						})
+
+						+radio({
+							box_classes: 'radio-buttons__radio',
+							option: 'Мужчина',
+						})
+
+						+radio({
+							box_classes: 'radio-buttons__radio',
+							option: 'Женщина',
+						})
+
+
+					.toggle.column-2__toggle
+						
+
 
 				div.inputs__column.column-3
 			section.form-elements__dropdown.dropdown

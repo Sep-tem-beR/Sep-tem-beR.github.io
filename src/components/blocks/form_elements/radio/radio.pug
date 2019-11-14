@@ -1,0 +1,13 @@
+//- using
+
+//- +radio({
+//-     box_classes: '',
+//-     option: '';
+//- })
+
+mixin radio(arg)
+    span.radio(class = arg.box_classes)
+        label.radio__label
+            input.radio__input(type="radio" name = 'sex')
+            span.radio__custom-radio
+            span.radio__option= arg.option

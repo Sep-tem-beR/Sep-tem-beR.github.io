@@ -15,7 +15,7 @@ const PATHS = {
 };
 
 const pages = [
-    'Colors_&_Type',
+    // 'Colors_&_Type',
     'form_elements'
 ];
  
@@ -41,15 +41,15 @@ const common = merge([
         filename: 'js/[name].js'
     },
     plugins: [
+        // new HtmlWebpackPlugin({
+        //     filename: pages[0] + '/index.html',
+        //     template: PATHS.source + '/' + pages[0] + '/' + pages[0] + '.pug',
+        //     chunks: ['Colors_&_Type'],
+        // }),
+
         new HtmlWebpackPlugin({
             filename: pages[0] + '/index.html',
             template: PATHS.source + '/' + pages[0] + '/' + pages[0] + '.pug',
-            chunks: ['Colors_&_Type'],
-        }),
-
-        new HtmlWebpackPlugin({
-            filename: pages[1] + '/index.html',
-            template: PATHS.source + '/' + pages[1] + '/' + pages[1] + '.pug',
             chunks: ['form_elements'],
         }),
     ],

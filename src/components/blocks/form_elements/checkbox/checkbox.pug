@@ -6,7 +6,9 @@
 //- })
 
 mixin checkbox(options)
+    - option_name = options.option_name
     p(class = options.block_classes)
-        label
-            input.checkbox.checkbox__input(type="checkbox")
-            span.option.checkbox__option= options.option_name
+        label.checkbox__label
+            input.checkbox__input(type="checkbox")
+            span.checkbox__custom-checkbox
+            = option_name = options.option_name

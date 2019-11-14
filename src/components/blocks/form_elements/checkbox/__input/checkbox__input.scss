@@ -1,0 +1,14 @@
+.checkbox {
+
+    &__input {
+        display: none;
+
+        &:checked + .checkbox__custom-checkbox::before {
+            display: block;
+        }
+
+        &:checked + .checkbox__custom-checkbox {
+            border: 1px solid $Primary_Color;
+        }
+    }
+}

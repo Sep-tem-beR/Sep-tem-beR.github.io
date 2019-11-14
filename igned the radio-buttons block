@@ -1,0 +1,101 @@
+[33mcommit 3c869f41ecf493ecb3511a004a5eff7364535e2d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;32mmixin[m[33m)[m
+Author: Еvgenij Pushkaryov <rosrys2013@mail.ru>
+Date:   Sun Nov 10 15:48:36 2019 +0300
+
+    rewrote a mixin for text fields and wrote a checkbox mixin, connected an Open Sans font
+
+[33mcommit 9c5500f44b56eeba6f8fb130aee8820b1dcc035e[m
+Author: Еvgenij Pushkaryov <rosrys2013@mail.ru>
+Date:   Tue Nov 5 20:08:32 2019 +0300
+
+    added _size modifier for dropdown
+
+[33mcommit 9ba6f2acf7de8f43c565710a245c9f7fc44971aa[m
+Author: Еvgenij Pushkaryov <rosrys2013@mail.ru>
+Date:   Tue Nov 5 16:37:49 2019 +0300
+
+    refactoring blocks
+
+[33mcommit df148fa2e52c4fb1059573bcccc45ac9a5ead644[m
+Author: Еvgenij Pushkaryov <rosrys2013@mail.ru>
+Date:   Mon Nov 4 15:18:22 2019 +0300
+
+    stylized four inputs in column-1
+
+[33mcommit 443396aabe85d6fecff1f7ee1c9dd0ee3b7ae6ed[m
+Author: Еvgenij Pushkaryov <rosrys2013@mail.ru>
+Date:   Sun Nov 3 09:06:44 2019 +0300
+
+    moved mixins into blocks and set up webpack-dev-server for multi-page layout
+
+[33mcommit bab6b0248d6a81a3e26d1f99cdb205661d3d9964[m
+Author: Еvgenij Pushkaryov <rosrys2013@mail.ru>
+Date:   Tue Oct 29 00:41:21 2019 +0300
+
+    configured a multi-page build, added publicPath to output
+
+[33mcommit 90eccc8663ba113a5e05f612af5d1e4200b867ca[m
+Author: Еvgenij Pushkaryov <rosrys2013@mail.ru>
+Date:   Mon Oct 28 15:44:46 2019 +0300
+
+    wrote input_mixin head_line_mixin and text_field_mixin
+
+[33mcommit 40ec65b4c7cce270f89612824e011bc32a53d7b0[m
+Author: Еvgenij Pushkaryov <rosrys2013@mail.ru>
+Date:   Thu Oct 24 15:57:20 2019 +0300
+
+    add src/components/blocks/form_elements and src/pages/form_elements
+
+[33mcommit 28c2ffcc8a42c38dc0f9f5e742cb512252cc17b8[m
+Author: Еvgenij Pushkaryov <rosrys2013@mail.ru>
+Date:   Sun Oct 20 17:28:42 2019 +0300
+
+    corrected font paths and removed the build folder from .gitignore
+
+[33mcommit 3c4d43fe77950bf9ffc405dc636cc06fb953a11a[m
+Author: Еvgenij Pushkaryov <rosrys2013@mail.ru>
+Date:   Sun Oct 20 16:16:25 2019 +0300
+
+    configured paths to pictures by writing resolve: alias
+
+[33mcommit adb1e4fafc68c040f80a7951e08a2781d26dc650[m
+Author: Еvgenij Pushkaryov <rosrys2013@mail.ru>
+Date:   Tue Oct 15 10:49:42 2019 +0300
+
+    redid a bunch of all garbage
+
+[33mcommit 520c1090106f91755d726e1ab8d07abf2865ab0d[m
+Author: Еvgenij Pushkaryov <rosrys2013@mail.ru>
+Date:   Fri Oct 11 12:20:18 2019 +0300
+
+    refactoring Colors_&_Type.pug in pages
+
+[33mcommit 1c05fc75ba342d234806eb4391b878b9fddba79a[m
+Author: Еvgenij Pushkaryov <rosrys2013@mail.ru>
+Date:   Wed Oct 9 11:24:31 2019 +0300
+
+    create scss folder in components folder and directory font-type in blocks
+
+[33mcommit cd7450747cd8332e93abf54059e6c147f3465ce5[m
+Author: Еvgenij Pushkaryov <rosrys2013@mail.ru>
+Date:   Sun Oct 6 14:51:10 2019 +0300
+
+    create webpack/fonts.js and its connection in webpack.config.js
+
+[33mcommit d340b5f9c51218493255d23efddcd43de0618e3a[m
+Author: Еvgenij Pushkaryov <rosrys2013@mail.ru>
+Date:   Sun Oct 6 13:45:02 2019 +0300
+
+    set a file-loader and tuned loading images
+
+[33mcommit f23db414dd0ed619bbb13a25a8eb5a7d7761d0ab[m
+Author: Еvgenij Pushkaryov <rosrys2013@mail.ru>
+Date:   Sat Oct 5 16:01:07 2019 +0300
+
+    add folder 'blocks' and development sample-color block
+
+[33mcommit ad4cc7144d8196d1485b484adb079499f91f4d83[m
+Author: Еvgenij Pushkaryov <rosrys2013@mail.ru>
+Date:   Wed Sep 18 20:26:59 2019 +0300
+
+    installation webpack

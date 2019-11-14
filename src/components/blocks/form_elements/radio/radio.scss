@@ -1,0 +1,13 @@
+@import '../radio/__label/radio__label.scss';
+@import '../radio/__input/radio__input.scss';
+@import '../radio/__custom-radio/_custom-radio';
+
+.radio {
+    display: inline-block;
+    margin-right: 20px;
+    font-family: OpenSans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}

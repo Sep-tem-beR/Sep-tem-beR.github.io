@@ -1,0 +1,21 @@
+.checkbox {
+
+    &__custom-checkbox {
+        display: block;
+        float: left;
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $Dark-Shade-25;
+        box-sizing: border-box;
+        border-radius: 4px;
+
+        &::before {
+            position: relative;
+            content: url('~src/components/blocks/form_elements/checkbox/img/check_mark.svg');
+            left: 4px;
+            display: none;
+        }
+
+    }
+}
