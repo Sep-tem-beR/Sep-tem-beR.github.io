@@ -1,12 +1,12 @@
 //- using
 
 //- +radio({
-//-     box_classes: '',
+//-     block_classes: ['radio', ''],
 //-     option: '';
 //- })
 
 mixin radio(arg)
-    span.radio(class = arg.box_classes)
+    span(class = arg.block_classes)
         label.radio__label
             input.radio__input(type="radio" name = 'sex')
             span.radio__custom-radio

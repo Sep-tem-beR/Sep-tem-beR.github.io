@@ -54,6 +54,11 @@
 
     &__radio-buttons {
         width: 100%;
+        margin-bottom: 41px;
+    }
+
+    &__toggle-buttons {
+        
     }
 }
 
@@ -61,5 +66,12 @@
 
     &__radio {
         margin-top: 11px;
+    }
+}
+
+.toggle-buttons {
+
+    &__head-line {
+        letter-spacing: -0.05em;
     }
 }

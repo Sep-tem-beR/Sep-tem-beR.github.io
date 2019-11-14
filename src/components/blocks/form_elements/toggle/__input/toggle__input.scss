@@ -1,0 +1,16 @@
+.toggle {
+
+    &__input {
+        display: none;
+
+        &:checked + .toggle__custom-toogle {
+            border: 1px solid $Primary_Color;
+            
+
+            &::after {
+                left: 23px;
+                background: $Primary_Gradient;
+            }
+        }
+    }
+}

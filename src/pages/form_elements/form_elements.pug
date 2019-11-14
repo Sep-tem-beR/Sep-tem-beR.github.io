@@ -130,23 +130,36 @@ block body
 
 					.radio-buttons.column-2__radio-buttons
 						+head-line({
-							head_line_classes: ['head-line', 'checkbox-buttons__head-line'],
+							head_line_classes: ['head-line', 'radio-buttons__head-line'],
 							head_line_content: 'radio buttons',
 						})
 
 						+radio({
-							box_classes: 'radio-buttons__radio',
+							block_classes: ['radio', 'radio-buttons__radio'],
 							option: 'Мужчина',
 						})
 
 						+radio({
-							box_classes: 'radio-buttons__radio',
+							block_classes: ['radio', 'radio-buttons__radio'],
 							option: 'Женщина',
 						})
 
 
-					.toggle.column-2__toggle
-						
+					.toggle-buttons.column-2__toggle-buttons
+						+head-line({
+							head_line_classes: ['head-line', 'toggle-buttons__head-line'],
+							head_line_content: 'toggle',
+						})
+
+						+toggle({
+							block_classes: ['toggle', 'toggle-buttons__toggle'],
+							option: 'Получать спецпредложения',
+						})
+
+						+toggle({
+							block_classes: ['toggle', 'toggle-buttons__toggle'],
+							option: 'Получать спецпредложения',
+						})
 
 
 				div.inputs__column.column-3

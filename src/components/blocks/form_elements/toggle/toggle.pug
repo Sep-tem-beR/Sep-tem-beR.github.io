@@ -1,0 +1,16 @@
+//- using
+
+//- +toggle({
+//-     block_classes: ['toggle', ''],
+//-     option: ''
+//- })
+
+
+
+
+mixin toggle(arg)
+    p(class = arg.block_classes)
+        label.toggle__label
+            input.toggle__input(type="checkbox")
+            span.toggle__custom-toogle
+            span.toggle__option= arg.option

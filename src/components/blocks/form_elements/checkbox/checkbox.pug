@@ -5,10 +5,10 @@
 //-     option_name: '',
 //- })
 
-mixin checkbox(options)
-    - option_name = options.option_name
-    p(class = options.block_classes)
+mixin checkbox(arg)
+    - option_name = arg.option_name
+    p(class = arg.block_classes)
         label.checkbox__label
             input.checkbox__input(type="checkbox")
             span.checkbox__custom-checkbox
-            = option_name = options.option_name
+            = option_name = arg.option_name
