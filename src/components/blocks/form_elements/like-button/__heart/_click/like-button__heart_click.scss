@@ -1,0 +1,14 @@
+.like-button {
+
+    &__heart {
+
+        &_click {
+
+            &::before {
+                content: '\e87d';
+                color: $Primary_Color;
+            }
+
+        }
+    }
+}

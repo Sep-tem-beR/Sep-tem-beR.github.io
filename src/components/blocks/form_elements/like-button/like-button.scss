@@ -1,0 +1,15 @@
+@import './__heart/like-button__heart.scss';
+@import './__amount/like-button__amount.scss';
+@import './__heart/_click/like-button__heart_click.scss';
+@import './__amount/_click/like-button__amount_click.scss';
+
+.like-button {
+    cursor: pointer;
+    width: 40px;
+    height: 20px;
+    border: 1px solid $Dark-Shade-25;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+@import './like-button_click.scss';

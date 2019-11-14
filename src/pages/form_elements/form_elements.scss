@@ -58,7 +58,7 @@
     }
 
     &__toggle-buttons {
-        
+        margin-bottom: 47px;
     }
 }
 
@@ -73,5 +73,22 @@
 
     &__head-line {
         letter-spacing: -0.05em;
+        margin-bottom: 16px;
+    }
+
+    &__toggle {
+        margin-bottom: 16px;
+    }
+}
+
+.like-buttons {
+
+    &__head-line {
+        margin-bottom: 15px;
+    }
+
+    &__like-button {
+        display: inline-block;;
+        margin-right: 6px;
     }
 }

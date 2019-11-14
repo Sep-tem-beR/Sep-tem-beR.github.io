@@ -1,0 +1,14 @@
+//-  using
+
+//-     +like-button({
+//-         block_classes: ['like-button', ''],
+//-         heart_classes: '',
+//-         amount_classes: '',
+//-     })
+
+
+
+mixin like-button(arg)
+    div(class = arg.block_classes)
+        span.like-button__heart(class = arg.heart_classes)
+        span.like-button__amount(class = arg.amount_classes)

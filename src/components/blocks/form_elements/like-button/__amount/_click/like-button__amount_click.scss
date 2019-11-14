@@ -1,0 +1,13 @@
+.like-button {
+
+    &__amount {
+
+        &_click {
+
+            &::before {
+                color: $Primary_Color;
+            }
+
+        }
+    }
+}

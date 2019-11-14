@@ -1,0 +1,20 @@
+.like-button {
+
+    &__heart {
+        display: inline-block;
+        width: 18px;
+        height: 20px;
+
+        &::before {
+            position: relative;
+            content: '\e87e';
+            left: 4px;
+            color: $Dark-Shade-25;
+            font-family: Material Icons;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 9px;
+        }
+    }
+}

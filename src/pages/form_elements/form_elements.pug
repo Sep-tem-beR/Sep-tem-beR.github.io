@@ -161,6 +161,22 @@ block body
 							option: 'Получать спецпредложения',
 						})
 
+					.like-buttons.column-2__like-buttons
+						+head-line({
+							head_line_classes: ['head-line', 'like-buttons__head-line'],
+							head_line_content: 'like button',
+						})
+
+						+like-button({
+							block_classes: ['like-button', 'like-buttons__like-button']
+						})
+
+						+like-button({
+							block_classes: ['like-button', 'like-buttons__like-button', 'like-button_click'],
+							heart_classes: 'like-button__heart_click',
+ 						    amount_classes: 'like-button__amount_click',
+						})
+
 
 				div.inputs__column.column-3
 			section.form-elements__dropdown.dropdown
