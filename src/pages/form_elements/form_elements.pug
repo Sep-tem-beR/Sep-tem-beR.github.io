@@ -177,6 +177,23 @@ block body
  						    amount_classes: 'like-button__amount_click',
 						})
 
+					.rate-buttons.column-2__rate-buttons
+						+head-line({
+							head_line_classes: ['head-line', 'rate-buttons__head-line'],
+							head_line_content: 'rate button',
+						})
+
+						.rate-buttons__wrapper
+							+rate-button({
+								block_rate_button_classes: ['rate-button', 'rate-buttons__rate-button'],
+								number_of_stars: 4,
+							})
+
+							+rate-button({
+								block_rate_button_classes: ['rate-button', 'rate-buttons__rate-button'],
+								number_of_stars: 5,
+							})
+
 
 				div.inputs__column.column-3
 			section.form-elements__dropdown.dropdown

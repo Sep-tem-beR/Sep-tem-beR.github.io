@@ -1,0 +1,16 @@
+//- using
+
+//- +rate-button({
+//-     block_rate_button_classes: ['rate-button', ''],
+//-     number_of_stars: ''
+//- })
+
+mixin rate-button(arg)
+    div(class = arg.block_rate_button_classes)
+        - var amount = arg.number_of_stars
+        - for (var i = 0; i < 5; i++)
+            - if (amount > 0)
+                span.rate-button__star.rate-button__star_click
+                - amount -= 1
+            - else
+                span.rate-button__star
