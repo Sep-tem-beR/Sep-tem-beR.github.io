@@ -7,7 +7,7 @@ const sass = require('./webpack/sass');
 const css = require('./webpack/css');
 const extractCSS = require('./webpack/extractCSS.js');
 const images = require('./webpack/images');
-const fonts = require('./webpack/fonts');
+const fonts = require('./webpack/fonts')
  
 const PATHS = {
     source: path.resolve(__dirname + '/src/pages'),
@@ -53,7 +53,7 @@ const common = merge([
             chunks: ['form_elements'],
         }),
     ],
-    },
+    }, 
     pug(),
     images(),
     fonts(),

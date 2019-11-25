@@ -1,0 +1,24 @@
+//- using
+
+//- +range-slider({
+//-     head_classes: ['range-slider__head', ''],
+//-     label_classes: '',
+//-     head_line_classes: ['head_line', ''],
+//-     head_line_content: '',
+//-     input_classes: '',
+//-     range_classes: '',
+//-     description_classes: '',
+//-     description_value: '',
+//- })
+
+
+
+
+mixin range-slider(arg)
+    - args = arg
+    div(class = arg.head_classes)
+        label(class = arg.label_classes)
+            +head-line(args)
+            input(type="text" id="amount" class = arg.input_classes readonly)
+    div(class = arg.range_classes id="slider-range")
+    p(class = arg.description_classes)= arg.description_value

@@ -3,73 +3,42 @@ include ../../components/blocks/form_elements/form_elements.pug
 
 block title
 	| Form Elements
+
+block links
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	
 
 block body
 	body.form-elements
 
-	block prepend header
-		include ../../components/blocks/header_logo/header_logo.pug
-		+header('form-elements__header')
+		block prepend header
+			include ../../components/blocks/header_logo/header_logo.pug
+			+header('form-elements__header')
 
-	block content
-		.form-elements__wrapper
-			section.form-elements__inputs.inputs
-				div.inputs__column.column-1
-					+text-field({
-						block_type: 'text-field',  
-						block_mix: 'column-1',
-						the_title_is: true,
-						head_line_classes: ['head-line', 'text-field__head_line'],
-						head_line_content: 'text field',
-						input_wrapper_mod: [''],
-						input_classes: ['input','text-field__input'],
-						input_placeholder: 'Email',
-					})
-
-					+text-field({
-						block_type: 'text-field',  
-						block_mix: 'column-1',
-						the_title_is: true,
-						head_line_classes: ['head-line', 'text-field__head_line'],
-						head_line_content: 'text field',
-						input_wrapper_mod: [''],
-						input_classes: ['input','text-field__input'],
-						input_placeholder: 'This is pretty awesome',
-					})
-
-					+text-field({
-						block_type: 'dropdown',  
-						block_mix: 'column-1',
-						the_title_is: true,
-						head_line_classes: ['head-line', 'text-field__head_line'],
-						head_line_content: 'dropdown',
-						input_wrapper_mod: [''],
-						input_classes: ['input','text-field__input'],
-						input_placeholder: 'Сколько гостей',
-					})
-
-					+text-field({
-						block_type: 'text-field',  
-						block_mix: 'column-1',
-						the_title_is: true,
-						head_line_classes: ['head-line', 'text-field__head_line'],
-						head_line_content: 'masked text field',
-						input_wrapper_mod: [''],
-						input_classes: ['input','text-field__input'],
-						input_placeholder: 'ДД.ММ.ГГГГ',
-					})
-
-					.column-1__wrapper
+		block content
+			.form-elements__wrapper
+				section.form-elements__inputs.inputs
+					div.inputs__column.column-1
 						+text-field({
-						block_type: 'dropdown',  
-						block_mix: 'column-1',
-						the_title_is: true,
-						head_line_classes: ['head-line', 'text-field__head_line'],
-						head_line_content: 'date dropdown',
-						input_wrapper_mod: ['text-field__input-wrapper_size_s'],
-						input_classes: ['input','text-field__input'],
-						input_placeholder: 'ДД.ММ.ГГГГ',
+							block_type: 'text-field',  
+							block_mix: 'column-1',
+							the_title_is: true,
+							head_line_classes: ['head-line', 'text-field__head_line'],
+							head_line_content: 'text field',
+							input_wrapper_mod: [''],
+							input_classes: ['input','text-field__input'],
+							input_placeholder: 'Email',
+						})
+
+						+text-field({
+							block_type: 'text-field',  
+							block_mix: 'column-1',
+							the_title_is: true,
+							head_line_classes: ['head-line', 'text-field__head_line'],
+							head_line_content: 'text field',
+							input_wrapper_mod: [''],
+							input_classes: ['input','text-field__input'],
+							input_placeholder: 'This is pretty awesome',
 						})
 
 						+text-field({
@@ -77,126 +46,177 @@ block body
 							block_mix: 'column-1',
 							the_title_is: true,
 							head_line_classes: ['head-line', 'text-field__head_line'],
+							head_line_content: 'dropdown',
+							input_wrapper_mod: [''],
+							input_classes: ['input','text-field__input'],
+							input_placeholder: 'Сколько гостей',
+						})
+
+						+text-field({
+							block_type: 'text-field',  
+							block_mix: 'column-1',
+							the_title_is: true,
+							head_line_classes: ['head-line', 'text-field__head_line'],
+							head_line_content: 'masked text field',
+							input_wrapper_mod: [''],
+							input_classes: ['input','text-field__input'],
+							input_placeholder: 'ДД.ММ.ГГГГ',
+						})
+
+						.column-1__wrapper
+							+text-field({
+							block_type: 'dropdown',  
+							block_mix: 'column-1',
+							the_title_is: true,
+							head_line_classes: ['head-line', 'text-field__head_line'],
 							head_line_content: 'date dropdown',
 							input_wrapper_mod: ['text-field__input-wrapper_size_s'],
 							input_classes: ['input','text-field__input'],
-							input_placeholder: '19.08.2019',
-						})
-					
-					+text-field({
-						block_type: 'dropdown',  
-						block_mix: 'column-1',
-						the_title_is: true,
-						head_line_classes: ['head-line', 'text-field__head_line'],
-						head_line_content: 'filter date dropdown',
-						input_wrapper_mod: ['text-field__input-wrapper_size_m'],
-						input_classes: ['input','text-field__input'],
-						input_placeholder: '19 авг - 23 авг',
-					})
-
-					+text-field({
-						block_type: 'subscription',  
-						block_mix: 'column-1',
-						the_title_is: true,
-						head_line_classes: ['head-line', 'text-field__head_line'],
-						head_line_content: 'subscription text field',
-						input_wrapper_mod: ['text-field__input-wrapper_size_m'],
-						input_classes: ['input','text-field__input'],
-						input_placeholder: 'Email',
-					})
-
-
-				div.inputs__column.column-2
-					.checkbox-buttons.column-2__checkbox-buttons
-						+head-line({
-							head_line_classes: ['head-line', 'checkbox-buttons__head-line'],
-							head_line_content: 'checkbox buttons',
-						})
-
-						+checkbox({
-						    block_classes: ['checkbox', 'checkbox-buttons__checkbox'],
-							option_name: 'Можно курить',
-						})
-
-						+checkbox({
-						    block_classes: ['checkbox', 'checkbox-buttons__checkbox'],
-							option_name: 'Можно с питомцами',
-						})
-
-						+checkbox({
-						    block_classes: ['checkbox', 'checkbox-buttons__checkbox'],
-							option_name: 'Можно пригласить гостей (до 10 человек)',
-						})
-
-					.radio-buttons.column-2__radio-buttons
-						+head-line({
-							head_line_classes: ['head-line', 'radio-buttons__head-line'],
-							head_line_content: 'radio buttons',
-						})
-
-						+radio({
-							block_classes: ['radio', 'radio-buttons__radio'],
-							option: 'Мужчина',
-						})
-
-						+radio({
-							block_classes: ['radio', 'radio-buttons__radio'],
-							option: 'Женщина',
-						})
-
-
-					.toggle-buttons.column-2__toggle-buttons
-						+head-line({
-							head_line_classes: ['head-line', 'toggle-buttons__head-line'],
-							head_line_content: 'toggle',
-						})
-
-						+toggle({
-							block_classes: ['toggle', 'toggle-buttons__toggle'],
-							option: 'Получать спецпредложения',
-						})
-
-						+toggle({
-							block_classes: ['toggle', 'toggle-buttons__toggle'],
-							option: 'Получать спецпредложения',
-						})
-
-					.like-buttons.column-2__like-buttons
-						+head-line({
-							head_line_classes: ['head-line', 'like-buttons__head-line'],
-							head_line_content: 'like button',
-						})
-
-						+like-button({
-							block_classes: ['like-button', 'like-buttons__like-button']
-						})
-
-						+like-button({
-							block_classes: ['like-button', 'like-buttons__like-button', 'like-button_click'],
-							heart_classes: 'like-button__heart_click',
- 						    amount_classes: 'like-button__amount_click',
-						})
-
-					.rate-buttons.column-2__rate-buttons
-						+head-line({
-							head_line_classes: ['head-line', 'rate-buttons__head-line'],
-							head_line_content: 'rate button',
-						})
-
-						.rate-buttons__wrapper
-							+rate-button({
-								block_rate_button_classes: ['rate-button', 'rate-buttons__rate-button'],
-								number_of_stars: 4,
+							input_placeholder: 'ДД.ММ.ГГГГ',
 							})
 
-							+rate-button({
-								block_rate_button_classes: ['rate-button', 'rate-buttons__rate-button'],
-								number_of_stars: 5,
+							+text-field({
+								block_type: 'dropdown',  
+								block_mix: 'column-1',
+								the_title_is: true,
+								head_line_classes: ['head-line', 'text-field__head_line'],
+								head_line_content: 'date dropdown',
+								input_wrapper_mod: ['text-field__input-wrapper_size_s'],
+								input_classes: ['input','text-field__input'],
+								input_placeholder: '19.08.2019',
+							})
+						
+						+text-field({
+							block_type: 'dropdown',  
+							block_mix: 'column-1',
+							the_title_is: true,
+							head_line_classes: ['head-line', 'text-field__head_line'],
+							head_line_content: 'filter date dropdown',
+							input_wrapper_mod: ['text-field__input-wrapper_size_m'],
+							input_classes: ['input','text-field__input'],
+							input_placeholder: '19 авг - 23 авг',
+						})
+
+						+text-field({
+							block_type: 'subscription',  
+							block_mix: 'column-1',
+							the_title_is: true,
+							head_line_classes: ['head-line', 'text-field__head_line'],
+							head_line_content: 'subscription text field',
+							input_wrapper_mod: ['text-field__input-wrapper_size_m'],
+							input_classes: ['input','text-field__input'],
+							input_placeholder: 'Email',
+						})
+
+
+					div.inputs__column.column-2
+						.checkbox-buttons.column-2__checkbox-buttons
+							+head-line({
+								head_line_classes: ['head-line', 'checkbox-buttons__head-line'],
+								head_line_content: 'checkbox buttons',
+							})
+
+							+checkbox({
+								block_classes: ['checkbox', 'checkbox-buttons__checkbox'],
+								option_name: 'Можно курить',
+							})
+
+							+checkbox({
+								block_classes: ['checkbox', 'checkbox-buttons__checkbox'],
+								option_name: 'Можно с питомцами',
+							})
+
+							+checkbox({
+								block_classes: ['checkbox', 'checkbox-buttons__checkbox'],
+								option_name: 'Можно пригласить гостей (до 10 человек)',
+							})
+
+						.radio-buttons.column-2__radio-buttons
+							+head-line({
+								head_line_classes: ['head-line', 'radio-buttons__head-line'],
+								head_line_content: 'radio buttons',
+							})
+
+							+radio({
+								block_classes: ['radio', 'radio-buttons__radio'],
+								option: 'Мужчина',
+							})
+
+							+radio({
+								block_classes: ['radio', 'radio-buttons__radio'],
+								option: 'Женщина',
 							})
 
 
-				div.inputs__column.column-3
-			section.form-elements__dropdown.dropdown
-			section.form-elements__lists.lists
-			section.form-elements__qualities.qualities
-			section.form-elements__comments.comments
+						.toggle-buttons.column-2__toggle-buttons
+							+head-line({
+								head_line_classes: ['head-line', 'toggle-buttons__head-line'],
+								head_line_content: 'toggle',
+							})
+
+							+toggle({
+								block_classes: ['toggle', 'toggle-buttons__toggle'],
+								option: 'Получать спецпредложения',
+							})
+
+							+toggle({
+								block_classes: ['toggle', 'toggle-buttons__toggle'],
+								option: 'Получать спецпредложения',
+							})
+
+						.like-buttons.column-2__like-buttons
+							+head-line({
+								head_line_classes: ['head-line', 'like-buttons__head-line'],
+								head_line_content: 'like button',
+							})
+
+							+like-button({
+								block_classes: ['like-button', 'like-buttons__like-button']
+							})
+
+							+like-button({
+								block_classes: ['like-button', 'like-buttons__like-button'],
+							})
+
+						.rate-buttons.column-2__rate-buttons
+							+head-line({
+								head_line_classes: ['head-line', 'rate-buttons__head-line'],
+								head_line_content: 'rate button',
+							})
+
+							.rate-buttons__wrapper
+								+rate-button({
+									block_rate_button_classes: ['rate-button', 'rate-buttons__rate-button'],
+									number_of_stars: 4,
+								})
+
+								+rate-button({
+									block_rate_button_classes: ['rate-button', 'rate-buttons__rate-button'],
+									number_of_stars: 5,
+								})
+
+
+					div.inputs__column.column-3
+						.range-slider.column-3__range-slider
+							+range-slider({
+								head_classes: ['range-slider__head', ''],
+								label_classes: 'range-slider__label',
+								head_line_classes: ['head-line', 'range-slider__head-line'],
+								head_line_content: 'range slider',
+								input_classes: 'range-slider__input',
+								range_classes: 'range-slider__range',
+								description_classes: 'range-slider__description',
+								description_value: '',
+							})
+
+
+
+
+
+				section.form-elements__dropdown.dropdown
+				section.form-elements__lists.lists
+				section.form-elements__qualities.qualities
+				section.form-elements__comments.comments
+
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

@@ -1,5 +1,9 @@
 @import '../../components/blocks/form_elements/form_elements.scss';
 
+// div {
+//     outline: 1px solid gray;
+// }
+
 .form-elements {
     width: 1440px;
     margin: 0;
@@ -114,3 +118,29 @@
         }
     }
 }
+
+/*  Range Slider  */
+
+.ui-slider {
+    width: 266px;
+    height: 6px;
+    border: 1px solid $Dark-Shade-25;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.ui-slider-range {
+    background: $Secondary_Gradient;
+    border-radius: 3px;
+}
+
+.ui-slider .ui-slider-handle {
+    width: 12px;
+    height: 12px;
+    background: $Secondary_Gradient;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    top: -.4em;
+}
+
+

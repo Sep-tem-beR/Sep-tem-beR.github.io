@@ -1,0 +1,29 @@
+.like-button {
+
+    &_click {
+        position: relative;
+        width: 38px;
+        height: 18px;
+        border-radius: 10px;
+        background-color: white;
+        transform-style: preserve-3d;
+        border: none;
+        margin-left: 1px;
+        margin-right: 10px;
+        margin-right: 7px !important;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: -1px;
+            right: -1px;
+            bottom: -1px;
+            left: -1px;
+            border-radius: 11px;
+            background: $Primary_Gradient;
+            transform: translateZ(-1px);
+        }
+    }
+} 
+    
+    
