@@ -1,16 +1,22 @@
 //- using
 
 //- +rate-button({
-//-     block_rate_button_classes: ['rate-button', ''],
-//-     number_of_stars: ''
+//-     fieldset_classes: ['rate-button', ''],
+//-     label_classes: ['rate-button__label', ''],
+//-     input_classes: ['rate-button__input', ''],
+//-     input_name: '',
+//-     input_id: ['', '', '', '', ''],
 //- })
 
 mixin rate-button(arg)
-    div(class = arg.block_rate_button_classes)
-        - var amount = arg.number_of_stars
-        - for (var i = 0; i < 5; i++)
-            - if (amount > 0)
-                span.rate-button__star.rate-button__star_click
-                - amount -= 1
-            - else
-                span.rate-button__star
+    fieldset(class = arg.fieldset_classes)
+        input(class = arg.input_classes type="radio" id=arg.input_id[0] name=arg.input_name value="5")
+        label(class = arg.label_classes for=arg.input_id[0])
+        input(class = arg.input_classes type="radio" id=arg.input_id[1] name=arg.input_name value="4")
+        label(class = arg.label_classes for=arg.input_id[1])
+        input(class = arg.input_classes type="radio" id=arg.input_id[2] name=arg.input_name value="3")
+        label(class = arg.label_classes for=arg.input_id[2]) 
+        input(class = arg.input_classes type="radio" id=arg.input_id[3] name=arg.input_name value="2")
+        label(class = arg.label_classes for=arg.input_id[3]) 
+        input(class = arg.input_classes type="radio" id=arg.input_id[4] name=arg.input_name value="1")
+        label(class = arg.label_classes for=arg.input_id[4])

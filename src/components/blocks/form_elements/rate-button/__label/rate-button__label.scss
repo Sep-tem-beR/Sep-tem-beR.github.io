@@ -1,0 +1,32 @@
+.rate-button {
+
+    &__label {
+        float: right;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+
+        &:before {
+            content: '\e83a';
+            font-family: Material Icons;
+            background: $Primary_Gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 24px;
+        }
+
+        &:hover,
+        &:hover ~ .rate-button__label {
+
+            &:before {
+                content: '\e838';
+            }
+        }
+
+        &:active {
+            transform: rotate(70deg);
+        }
+
+    }
+}

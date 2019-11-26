@@ -1,0 +1,16 @@
+.rate-button {
+
+    &__input {
+        display: none;
+
+        &:checked,
+        &:checked ~ .rate-button__label {
+
+                &:before {
+                    content: '\e838';
+                }
+        }
+    }
+}
+
+

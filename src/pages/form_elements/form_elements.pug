@@ -186,14 +186,22 @@ block body
 
 							.rate-buttons__wrapper
 								+rate-button({
-									block_rate_button_classes: ['rate-button', 'rate-buttons__rate-button'],
-									number_of_stars: 4,
+								    fieldset_classes: ['rate-button', 'rate-buttons__rate-button'],
+								    label_classes: ['rate-button__label', ''],
+								    input_classes: ['rate-button__input', ''],
+									input_name: 'rating',
+									input_id: ['star1', 'star2', 'star3', 'star4', 'star5'],
 								})
 
 								+rate-button({
-									block_rate_button_classes: ['rate-button', 'rate-buttons__rate-button'],
-									number_of_stars: 5,
+								    fieldset_classes: ['rate-button', 'rate-buttons__rate-button'],
+								    label_classes: ['rate-button__label', ''],
+								    input_classes: ['rate-button__input', ''],
+									input_name: 'rating-1',
+									input_id: ['star_1', 'star_2', 'star_3', 'star_4', 'star_5'],
 								})
+
+								
 
 
 					div.inputs__column.column-3

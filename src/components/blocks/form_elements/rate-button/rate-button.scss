@@ -1,2 +1,11 @@
-@import './__star/rate-button__star.scss';
-@import './__star/_click/rate-button__star_click.scss'
+
+@import './__label/rate-button__label.scss';
+@import './__input/rate-button__input.scss';
+
+.rate-button {
+    border: none;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    
+}

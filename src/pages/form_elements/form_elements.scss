@@ -108,13 +108,13 @@
     }
 
     &__wrapper {
-        display: flex;
+        float: left;
     }
 
     &__rate-button {
 
         &:first-child {
-            margin-right: 20px;
+            margin-right: 16px;
         }
     }
 }
@@ -142,5 +142,6 @@
     border-radius: 10px;
     top: -.4em;
 }
+
 
 
