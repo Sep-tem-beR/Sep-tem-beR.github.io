@@ -1,0 +1,14 @@
+//- using
+
+//- +button({
+//-     type_button: '',
+//-     button_classes: ['button', ''], may be '_active', '_disabled','_size_middle', '_size_big',
+                                        ''
+//-     button_value: ''
+//- })
+
+mixin button(arg)
+    if arg.type_button === 'just_a_button'
+        div(class = arg.button_classes)= arg.button_value
+    else
+        a(class = arg.button_classes)= arg.button_value

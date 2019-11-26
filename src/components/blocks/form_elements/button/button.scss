@@ -1,0 +1,20 @@
+@import "./_active/button_active.scss";
+@import "./_disabled/button_disabled.scss";
+@import "./_size/_big/button_size_big.scss";
+@import "./_size/_middle/button_size_middle.scss";
+@import './_border/_active/button_border_active.scss';
+@import './_border/_disabled/button_border_disabled.scss';
+
+.button {
+    cursor: pointer;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

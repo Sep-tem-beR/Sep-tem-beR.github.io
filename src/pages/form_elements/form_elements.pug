@@ -18,7 +18,7 @@ block body
 		block content
 			.form-elements__wrapper
 				section.form-elements__inputs.inputs
-					div.inputs__column.column-1
+					.inputs__column.column-1
 						+text-field({
 							block_type: 'text-field',  
 							block_mix: 'column-1',
@@ -109,7 +109,7 @@ block body
 						})
 
 
-					div.inputs__column.column-2
+					.inputs__column.column-2
 						.checkbox-buttons.column-2__checkbox-buttons
 							+head-line({
 								head_line_classes: ['head-line', 'checkbox-buttons__head-line'],
@@ -204,7 +204,7 @@ block body
 								
 
 
-					div.inputs__column.column-3
+					.inputs__column.column-3
 						.range-slider.column-3__range-slider
 							+range-slider({
 								head_classes: ['range-slider__head', ''],
@@ -216,6 +216,38 @@ block body
 								description_classes: 'range-slider__description',
 								description_value: '',
 							})
+
+						.buttons.column-3__buttons
+							+head-line({
+								head_line_classes: ['head-line', 'buttons__head-line'],
+								head_line_content: 'buttons',
+							})
+
+							.full-color-buttons.buttons__full-color-buttons
+								+button({
+									type_button: 'just_a_button',
+									button_classes: ['button', 'button_active', 'button_size_middle'],
+									button_value: 'click me',
+								})
+
+								+button({
+									type_button: 'just_a_button',
+									button_classes: ['button', 'button_disabled', 'button_size_middle'],
+									button_value: 'click me',
+								})
+
+							.border-buttons.buttons__border-buttons
+								+button({
+									type_button: 'just_a_button',
+									button_classes: ['button', 'button_border_active', 'button_size_middle'],
+									button_value: 'click me',
+								})
+
+								+button({
+									type_button: 'just_a_button',
+									button_classes: ['button', 'button_border_disabled', 'button_size_middle'],
+									button_value: 'click me',
+								}) 
 
 
 

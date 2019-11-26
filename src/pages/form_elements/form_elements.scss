@@ -119,6 +119,13 @@
     }
 }
 
+.column-3 {
+
+    &__buttons {
+        margin-top: 44px;
+    }
+}
+
 /*  Range Slider  */
 
 .ui-slider {
@@ -143,5 +150,14 @@
     top: -.4em;
 }
 
+.buttons {
 
+    &__full-color-buttons,
+    &__border-buttons {
+        display: flex;
+        width: 217px;
+        justify-content: space-between;
+        margin: 16px 0 32px 0;
+    }
+}
 
