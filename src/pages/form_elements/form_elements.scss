@@ -159,5 +159,14 @@
         justify-content: space-between;
         margin: 16px 0 32px 0;
     }
+
+    &__button-text {
+        margin-bottom: 78px;
+    }
+}
+
+.button-text .button{
+    float: left;
+    margin-right: 20px;
 }
 

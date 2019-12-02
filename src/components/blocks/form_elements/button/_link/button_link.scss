@@ -1,0 +1,17 @@
+.button_link {
+    position: relative;
+    display: flexbox;
+
+    &:after {
+        content: '\e5c8';
+        position: relative;
+        left: 74px;
+        font-family: Material Icons;
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+        
+    }
+}

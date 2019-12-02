@@ -226,28 +226,47 @@ block body
 							.full-color-buttons.buttons__full-color-buttons
 								+button({
 									type_button: 'just_a_button',
-									button_classes: ['button', 'button_active', 'button_size_middle'],
+									button_classes: ['button', 'button_like-button', 'button_active', 'button_size_middle'],
 									button_value: 'click me',
 								})
 
 								+button({
 									type_button: 'just_a_button',
-									button_classes: ['button', 'button_disabled', 'button_size_middle'],
+									button_classes: ['button', 'button_like-button', 'button_disabled', 'button_size_middle'],
 									button_value: 'click me',
 								})
 
 							.border-buttons.buttons__border-buttons
 								+button({
 									type_button: 'just_a_button',
-									button_classes: ['button', 'button_border_active', 'button_size_middle'],
+									button_classes: ['button', 'button_like-button', 'button_border_active', 'button_size_middle'],
 									button_value: 'click me',
 								})
 
 								+button({
 									type_button: 'just_a_button',
-									button_classes: ['button', 'button_border_disabled', 'button_size_middle'],
+									button_classes: ['button', 'button_like-button', 'button_border_disabled', 'button_size_middle'],
 									button_value: 'click me',
 								}) 
+
+							.button-text.buttons__button-text
+								+button({
+									type_button: 'just_a_button',
+									button_classes: ['button'],
+									button_value: 'click me',
+								})
+
+								+button({
+									type_button: 'just_a_button',
+									button_classes: ['button', 'button_like-text-disabled'],
+									button_value: 'click me',
+								})
+
+							+button({
+									type_button: '',
+									button_classes: ['button', 'button_link', 'button_like-button', 'button_size_big', 'button_active'],
+									button_value: 'перейти к оплате',
+								})
 
 
 
