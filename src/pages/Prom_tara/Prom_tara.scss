@@ -1,0 +1,198 @@
+.landing {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    color: #969696;
+
+    &__header {
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 40px 0 0;
+        max-height: 150px;
+    }
+
+    &__main {
+        height: 700px;
+        z-index: -1;
+    }
+}
+
+.header {
+    background-color: #999999;
+    perspective: 500px;
+
+    &__logo {
+        padding: 20px 0 0 40px;
+    }
+
+    &__contacts {
+        position: absolute;
+        right: 50px;
+        top: 20px;
+        padding: 0 20px 0 50px;
+        font: 1em sans-serif;
+        color: 	#0067FF;
+        background-color: #fff;
+        border-radius: 5px;
+        // transform: perspective(900px) rotateY(-5deg);
+        box-shadow: 0 0 70px  #000;
+        z-index: 1;
+    }
+
+    &__adress {
+        position: relative;
+        
+        &:before {
+            position: absolute;
+            content: url('./imaes/iconfinder_map-marker_299087.png');
+            left: -40px;
+            top: 5px;
+        }
+    }
+
+    &__tel {
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: url('./imaes/iconfinder_Multimedia_Telephone_call_contact_phone_ringing_multimedia_3841794\ \(1\).png');
+            left: -40px;
+            
+        }
+    }
+
+    &__email {
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: url('./imaes/iconfinder_gnome-stock-mail-fwd_29811.png');
+            left: -40px;
+            
+        }
+    }
+}
+
+
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1px;
+}
+
+.headline {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.border {
+    border-bottom: 5px solid #FF9800;
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+
+
+.main {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        background: url('./imaes/box.jpg') center / cover no-repeat;
+        filter: blur(5px);
+    }
+
+    &__headline {
+        color: #FFF;
+        margin-top: 160px;
+    }
+
+    &__slogan {
+        text-align: right;
+        font-size: 1.5em;
+        color: #FFf;
+    }
+}
+
+.qualities {
+
+    &__headline {
+        margin: 60px 0 40px 0;
+    }
+
+    &__quality {
+        display: flex;
+        justify-content: space-between;
+        // margin-bottom: 60px;
+        padding-top: 100px;
+
+        &:nth-child(1) .qualities__image {
+            background: url('./imaes/moving-family.jpg') -20px  no-repeat;
+        }
+
+        &:nth-child(2) .qualities__image {
+            background: url('./imaes/strong-box.jpg') right/cover;
+        }
+
+        &:nth-child(3) .qualities__image {
+            background: url('./imaes/logo-box.jpg') center/120% no-repeat;
+        }
+
+        &:nth-child(4) .qualities__image {
+            background: url('./imaes/recycle.jpg') right/cover;
+        }
+    }
+
+    &__quality {
+
+        &:nth-child(2), &:nth-child(4) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__image {
+        min-width: 300px;
+        height: 300px;
+        border-radius: 50%;
+
+    }
+
+    &__description{
+        box-sizing: border-box;
+        padding-left: 50px;
+        font-size: 1.2em;
+    }
+
+    &__description-headline {
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    &____text {
+        
+    }
+
+    &__quality {
+
+        &:nth-child(2) .qualities__description {
+            padding: 0 50px 0 0;
+
+        }
+
+        &:nth-child(4) .qualities__description {
+            padding: 0 50px 0 0;
+
+        }
+
+    }
+}

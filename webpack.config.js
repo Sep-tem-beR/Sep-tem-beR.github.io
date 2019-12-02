@@ -16,7 +16,8 @@ const PATHS = {
 
 const pages = [
     // 'Colors_&_Type',
-    'form_elements'
+    // 'form_elements',
+    'Prom_tara'
 ];
  
 const common = merge([
@@ -50,7 +51,7 @@ const common = merge([
         new HtmlWebpackPlugin({
             filename: pages[0] + '/index.html',
             template: PATHS.source + '/' + pages[0] + '/' + pages[0] + '.pug',
-            chunks: ['form_elements'],
+            chunks: ['Prom_tara'],
         }),
     ],
     }, 
