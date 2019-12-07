@@ -32,7 +32,7 @@ html(lang="en")
         section.main.landing__main
             .wrapper
                 h1.headline.main__headline 
-                    | Производство упаковки из гофрокартона
+                    | Мы производим упаковку из гофрокартона
                     br
                     | по индивидуальным размерам.
                 p.main__slogan 12 лет наша продукция помогает Вашему бизнесу!
@@ -93,12 +93,45 @@ html(lang="en")
 
 
         section.orders.landing__orders
-            .wrapper
-                h3.headline.qualities__headline Чаще всего у нас заказывают
+            .wrapper.orders__wrapper
+                h3.headline.orders__headline Чаще всего у нас заказывают
                 .border
+                .owl-carousel.owl-theme
+                    .orders__order.orders__order-1
+                        .orders__img.orders__img-1
+                        .description.orders__description
+                            h3.description__headline FEFCO 0427 (Самолет)
+                            p.description__text
+                                | Самосборная упаковка Fefco 0427  с откидной крышкой и «ушками».
+                                | Изделие собирается из одной заготовки. Применяется для упаковки негабаритных товаров.
+                                | Основные заказчики - интернет-магазины.
+                    .orders__order.orders__order-2
+                        .orders__img.orders__img-2
+                        .description.orders__description
+                            h3.description__headline FEFCO 0215 (Ларец)
+                            p.description__text
+                                | Четырехклапанный ящик FEFCO 0215 с крышкой и дном типа «ласточкин хвост».
+                                | Верхние клапаны закрываются на замок.
+                    .orders__order.orders__order-3
+                        .orders__img.orders__img-3
+                        .description.orders__description
+                            h3.description__headline FEFCO 0426 (Пицца)
+                            p.description__text
+                                | Упаковка FEFCO 0426 c цельным дном и откидной крышкой.
+                                | На крышке предусмотрены боковые клапаны, которые усиливают прочностные свойства
+                                | конструкции. Короб может быть прямоугольной или со скошенными краями.
+                    .orders__order.orders__order-4
+                        .orders__img.orders__img-4
+                        .description.orders__description
+                            h3.description__headline FEFCO 0330 (Крышка + дно)
+                            p.description__text
+                                | Короб FEFCO 0330 состоит из двух частей – крышки и дна. Крышка обладает
+                                | усиленными стенки по ширине, а дно - такими же по длине. Дно+крышка – одна
+                                | из самых прочных конструкций из каталога FEFCO.
 
 
-        section.additional-qualities.landing__additional-qualities
+
+        //- section.additional-qualities.landing__additional-qualities
             .wrapper
                 h3.headline.additional-qualities__headline Это для вас-если:
                 .border
@@ -109,11 +142,17 @@ html(lang="en")
                 h3.headline.customers__headline Клиенты которые нам верят
                 .border
                 .customers__wrapper
-                    .customer__customer
-                    .customer__customer
-                    .customer__customer
-                    .customer__customer
-                    .customer__customer
+                    .customers__line-1
+                        .customer__customer
+                        .customer__customer
+                        .customer__customer
+                    .customers__line-2
+                        .customer__customer
+                        .customer__customer
+                    .customers__line-3
+                        .customer__customer
+                        .customer__customer
+                        .customer__customer
 
 
         section.steps.landing__steps
@@ -164,3 +203,8 @@ html(lang="en")
 
 
         footer.footer.landing__footer
+
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="owlcarousel/owl.carousel.min.js"></script>
+

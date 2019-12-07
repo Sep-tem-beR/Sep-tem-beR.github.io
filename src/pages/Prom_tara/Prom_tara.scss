@@ -14,7 +14,7 @@
     }
 
     &__main {
-        height: 700px;
+        height: 800px;
         z-index: -1;
     }
 }
@@ -33,10 +33,9 @@
         top: 20px;
         padding: 0 20px 0 50px;
         font: 1em sans-serif;
-        color: 	#0067FF;
+        color: 	#6B6B6B;
         background-color: #fff;
         border-radius: 5px;
-        // transform: perspective(900px) rotateY(-5deg);
         box-shadow: 0 0 70px  #000;
         z-index: 1;
     }
@@ -46,7 +45,7 @@
         
         &:before {
             position: absolute;
-            content: url('./imaes/iconfinder_map-marker_299087.png');
+            content: url('./images/iconfinder_map-marker_299087.png');
             left: -40px;
             top: 5px;
         }
@@ -57,7 +56,7 @@
 
         &:before {
             position: absolute;
-            content: url('./imaes/iconfinder_Multimedia_Telephone_call_contact_phone_ringing_multimedia_3841794\ \(1\).png');
+            content: url('./images/iconfinder_Multimedia_Telephone_call_contact_phone_ringing_multimedia_3841794\ \(1\).png');
             left: -40px;
             
         }
@@ -68,7 +67,7 @@
 
         &:before {
             position: absolute;
-            content: url('./imaes/iconfinder_gnome-stock-mail-fwd_29811.png');
+            content: url('./images/iconfinder_gnome-stock-mail-fwd_29811.png');
             left: -40px;
             
         }
@@ -85,11 +84,12 @@
 
 .headline {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3em;
+    color: black;
 }
 
 .border {
-    border-bottom: 5px solid #FF9800;
+    border-bottom: 2px solid #FF0000;
     width: 200px;
     margin: 0 auto;
 }
@@ -108,7 +108,7 @@
         top: 0;
         bottom: 0;
         z-index: -1;
-        background: url('./imaes/box.jpg') center / cover no-repeat;
+        background: url('./images/box.jpg') center / cover no-repeat;
         filter: blur(5px);
     }
 
@@ -137,19 +137,19 @@
         padding-top: 100px;
 
         &:nth-child(1) .qualities__image {
-            background: url('./imaes/moving-family.jpg') -20px  no-repeat;
+            background: url('./images/moving-family.jpg') -20px  no-repeat;
         }
 
         &:nth-child(2) .qualities__image {
-            background: url('./imaes/strong-box.jpg') right/cover;
+            background: url('./images/strong-box.jpg') right/cover;
         }
 
         &:nth-child(3) .qualities__image {
-            background: url('./imaes/logo-box.jpg') center/120% no-repeat;
+            background: url('./images/logo-box.jpg') center/120% no-repeat;
         }
 
         &:nth-child(4) .qualities__image {
-            background: url('./imaes/recycle.jpg') right/cover;
+            background: url('./images/recycle.jpg') right/cover;
         }
     }
 
@@ -194,5 +194,126 @@
 
         }
 
+    }
+}
+
+.orders {
+
+    &__headline {
+        margin: 100px 0 40px;
+    }
+
+    &__order {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__wrapper {
+        min-height:500px;
+    }
+
+    &__img {
+        min-width: 300px;
+        height: 300px;
+        margin-left: 70px;
+    }
+
+    &__img-1 {
+        background: url('./images/order-1.jpg') center / cover no-repeat;
+    }
+
+    &__img-2 {
+        background: url('./images/order-2.jpg') center / cover no-repeat;
+    }
+
+    &__img-3 {
+        background: url('./images/order-3.jpg') center / cover no-repeat;
+    }
+
+    &__img-4 {
+        background: url('./images/order-4.jpg') center / cover no-repeat;
+    }
+    
+}
+
+.description {
+
+    &__headline {
+        text-align: center;
+        color: brown;
+    }
+
+    &__text {
+        padding: 30px 0 0 60px;
+        font-size: 1.2em;
+        margin-right: 70px;
+    }
+    
+}
+
+.owl-carousel {
+    padding: 100px 0 0 0; 
+}
+
+.customers {
+
+    &__line-1, &__line-2, &__line-3 {
+        display: flex;
+    }
+
+    &__line-1, &__line-3 {
+        justify-content: space-between;
+    }
+
+    &__line-2 {
+        justify-content: space-around;
+    }
+
+    &__line-1 .customer__customer{
+        width: 150px;
+        height: 150px;
+
+        &:nth-child(1) {
+            background: url('./images/burger_king.png') center / contain no-repeat;
+        }
+
+        &:nth-child(2) {
+            background: url('./images/calve.png') center / contain no-repeat;
+        }
+
+        &:nth-child(3) {
+            background: url('./images/kompot.png') center / contain no-repeat;
+        }
+    }
+
+    &__line-2 .customer__customer{
+        width: 150px;
+        height: 150px;
+
+        &:nth-child(1) {
+            background: url('./images/magnit.png') center / contain no-repeat;
+        }
+
+        &:nth-child(2) {
+            background: url('./images/mcdonalds.png') center / contain no-repeat;
+        }
+    }
+
+    &__line-3 .customer__customer{
+        width: 150px;
+        height: 150px;
+
+        &:nth-child(1) {
+            background: url('./images/rus_produkt.png') center / contain no-repeat;
+        }
+
+        &:nth-child(2) {
+            background: url('./images/danone.png') center / contain no-repeat;
+        }
+
+        &:nth-child(3) {
+            background: url('./images/domik_v_derevne.png') center / contain no-repeat;
+        }
     }
 }
